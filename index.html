@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+<style>
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search Here">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1</div>
+    ><img src="https://www.cnet.com/a/img/iJxo9AIxiXHqVoqm6nGISKtKwPI=/2020/08/18/b7168aea-9f7e-47bb-9f31-4cb8ad92fbc7/lg-note-20-ultra-5g-iphone-11-se-google-pixel-4a-lg-velvet-6133.jpg" style="width:100%">
+      <div class="text">Phones</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-budget-laptops-1589463401.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" style="width:100%">
+      <div class="text">Laptops</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://i.gadgets360cdn.com/large/boult_audio_tws_earbuds_gadgets360_1596801314281.jpg" style="width:100%">
+      <div class="text">Earbuds</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+            <div class="card">
+                <h2 class="my-2">Best Laptops</h2>
+                <div class="cards">
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/asus-zephyrus-s17-2021-core-i9-11th-gen-32-gb-3-tb-ssd-windows-10-home-16-gb-graphics-nvidia-geforce-rtx-3080-gx703hs-kf058ts-gaming-laptop/p/itmffc55c5cb7288?pid=COMG5C28GNFDHZUP&lid=LSTCOMG5C28GNFDHZUPPF1WD5&marketplace=FLIPKART&q=BESt+laptops&store=6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=a1bb8566-83bf-4d63-810a-d538d2863a58.COMG5C28GNFDHZUP.SEARCH&ppt=sp&ppn=sp&ssid=s9v7p2ywio0000001641401155485&qH=0a65f8568f5f7f4d"> <img src="https://rukminim1.flixcart.com/image/312/312/krme93k0/computer/n/p/a/rog-zephyrus-s17-gaming-laptop-asus-original-imag5d9kxrzy2b9t.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">ASUS Zephyrus S17</p> </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 2% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/apple-macbook-pro-m1-chip-10-core-cpu-16-core-gpu-16-gb-1-tb-ssd-mac-os-monterey-mk193hn-a/p/itmac98e5071f1b4?pid=COMG7X7HZBSGGDUF&lid=LSTCOMG7X7HZBSGGDUFZAUF3J&marketplace=FLIPKART&q=BESt+laptops+apple&store=6bo&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=234f38d0-da63-44a8-99d5-3ed2925888af.COMG7X7HZBSGGDUF.SEARCH&ppt=sp&ppn=sp&ssid=1xdj889tmo0000001641401427880&qH=0cfd375b8af95cad"> <img src="https://rukminim1.flixcart.com/image/416/416/kuyf8nk0/computer/3/n/s/mk183hn-a-laptop-apple-original-imag7yzkbgbwvwq3.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">APPLE Macbook Pro</p> </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 5% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/asus-rog-zephyrus-s17-core-i7-10th-gen-32-gb-1-tb-ssd-windows-10-home-8-gb-graphics-nvidia-geforce-rtx-2080-super-max-q-design-300-hz-gx701lxs-hg002ts-gaming-laptop/p/itm2195409fa849a?pid=COMFXU6PAVT34CQY&lid=LSTCOMFXU6PAVT34CQYOVEAKZ&marketplace=FLIPKART&q=BESt+laptops+&store=6bo%2Fb5g&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=8916b53f-67c5-4125-b98b-d0e71034f566.COMFXU6PAVT34CQY.SEARCH&ppt=sp&ppn=sp&ssid=omtzbjihtc0000001641401555814&qH=9ba5f08f3c2f41cf"> <img src="https://rukminim1.flixcart.com/image/312/312/kiew3gw0/computer/c/q/y/asus-na-gaming-laptop-original-imafy7c4gmpx8g6e.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">ASUS ROG Zephyrus</p> </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 1% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/lenovo-yoga-9-core-i7-11th-gen-intel-evo-16-gb-1-tb-ssd-windows-10-home-14itl5-2-1-laptop/p/itmfd2d53ce2e01b?pid=COMFXV7SEYSGQ2FU&lid=LSTCOMFXV7SEYSGQ2FU7GH2LA&marketplace=FLIPKART&q=BESt+laptops+&store=6bo%2Fb5g&srno=s_2_27&otracker=search&otracker1=search&fm=SEARCH&iid=d4f066e8-711d-477d-bedc-a5144060d20d.COMFXV7SEYSGQ2FU.SEARCH&ppt=sp&ppn=sp&qH=9ba5f08f3c2f41cf"> <img src="https://rukminim1.flixcart.com/image/312/312/klfhk7k0/computer/d/k/s/na-2-in-1-laptop-lenovo-original-imagyk4hrfg326hv.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">lenovo Yoga 9</p> </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 12% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/acer-aspire-7-core-i5-10th-gen-8-gb-512-gb-ssd-windows-10-home-4-graphics-nvidia-geforce-gtx-1650-a715-75g-50ta-a715-75g-41g-gaming-laptop/p/itmc97c3da5d2abe?pid=COMG2KBG2K4GFFF7&lid=LSTCOMG2KBG2K4GFFF78YBPHO&marketplace=FLIPKART&q=BESt+laptops+&store=6bo%2Fb5g&spotlightTagId=BestvalueId_6bo%2Fb5g&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=0e394e3d-58d8-4bb0-9a3c-a3f5694c7ac1.COMG2KBG2K4GFFF7.SEARCH&ppt=sp&ppn=sp&qH=9ba5f08f3c2f41cf"> <img src="https://rukminim1.flixcart.com/image/312/312/kp1imq80/computer/u/b/z/na-gaming-laptop-acer-original-imag3d63hk3h8nm2.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">acer Aspire 7</p> </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 41% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+                   
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/hp-pavilion-x360-convertible-core-i5-11th-gen-16-gb-512-gb-ssd-windows-10-home-14-dy0053tu-thin-light-laptop/p/itm7949005671da4?pid=COMG6UHHEFTBGZCF&lid=LSTCOMG6UHHEFTBGZCFLUWVLG&marketplace=FLIPKART&q=BESt+laptops+i9&store=search.flipkart.com&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=a18d719e-437c-43f3-b037-bf495f8f779e.COMG6UHHEFTBGZCF.SEARCH&ppt=sp&ppn=sp&ssid=s1hgvq57kg0000001641402108242&qH=796d816547e68010"> <img src="https://rukminim1.flixcart.com/image/416/416/kufuikw0/computer/i/o/s/14-dy0003tu-thin-and-light-laptop-hp-original-imag7k25vgcnds5f.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">HP Pavilion x360</p> </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 12% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+                    <div id="card-item1" class="carditem-1">
+                        <img src="https://source.unsplash.com/160x160/?cricket,bat,boundary" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?bat,pad" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="my-2">Best Selling  earbuds</h2>
+                <div class="cards">
+                    <div class="card-item">
+                       <a href="https://www.flipkart.com/apple-airpods-pro-wireless-charging-case-active-noise-cancellation-enabled-bluetooth-headset/p/itm938a988eaff68?pid=ACCFHYJ8ZU9WDHDW&lid=LSTACCFHYJ8ZU9WDHDWZNRRJJ&marketplace=FLIPKART&q=airpods&store=0pm%2Ffcn&spotlightTagId=BestvalueId_0pm%2Ffcn&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_3_na_na_na&fm=SEARCH&iid=af9b9d2c-a9f8-4573-aa8c-96530da212bc.ACCFHYJ8ZU9WDHDW.SEARCH&ppt=sp&ppn=sp&ssid=unhit44uog0000001641399339587&qH=b138a01d28163f61"> <img src="https://rukminim1.flixcart.com/image/416/416/kpinwy80/headphone/r/1/q/mwp22hn-a-apple-original-imag3qe9eqkfhmg8.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">Apple airpods pro</p></div>
+                         <div class="green"><p class="text-center my-1">Flat 16% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://rukminim1.flixcart.com/image/416/416/kpinwy80/headphone/x/r/e/mmef2hn-a-apple-original-imag3qe9hphsevrt.jpeg?q=70"> <img src="https://rukminim1.flixcart.com/image/416/416/kpinwy80/headphone/x/r/e/mmef2hn-a-apple-original-imag3qe9hphsevrt.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">Apple airpods </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 19% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/lg-tone-free-hbs-fn7-uv-nano-99-9-bacteria-anc-bluetooth-headset/p/itmac7f2167aa76a?pid=ACCFZFK4A3SBZ9FV&lid=LSTACCFZFK4A3SBZ9FVQMBO4E&marketplace=FLIPKART&q=+earbuds+&store=0pm%2Ffcn&srno=s_1_11&otracker=search&otracker1=search&fm=SEARCH&iid=ed83f5e9-bb89-472f-ab2b-e412751f2108.ACCFZFK4A3SBZ9FV.SEARCH&ppt=sp&ppn=sp&qH=d99385d8623d97bf"> <img src="https://rukminim1.flixcart.com/image/612/612/kjkbv680-0/headphone/p/0/x/hbs-fn7-lg-original-imafz3uqugqyeu3q.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">LG TONE </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 33% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/sony-wf-xb700-18-hours-battery-life-bluetooth-headset/p/itm21f399356711e?pid=ACCFSNJEVNWCUSH7&lid=LSTACCFSNJEVNWCUSH7EQM2Y2&marketplace=FLIPKART&q=sony+earbuds+&store=0pm%2Ffcn&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=4da92dfd-07f4-4710-9dc3-c31e2807fd5f.ACCFSNJEVNWCUSH7.SEARCH&ppt=sp&ppn=sp&ssid=x61g7ev2pc0000001641400500548&qH=5420342d37599ef8"> <img src="https://rukminim1.flixcart.com/image/416/416/kbpeoi80/headphone/k/v/i/wf-xb700-sony-original-imaftyftmayuhrz9.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">SONY WF-XB700 </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 3% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/google-pixel-buds-a-series-assistant-bluetooth-headset/p/itm22ab581797101?pid=ACCG57P5RGWJZARH&lid=LSTACCG57P5RGWJZARHA9IUKQ&marketplace=FLIPKART&q=+earbuds+under+20000&store=0pm%2Ffcn&srno=s_2_63&otracker=search&otracker1=search&fm=SEARCH&iid=e338fdf4-bf05-49e4-8530-7693c9bac201.ACCG57P5RGWJZARH.SEARCH&ppt=sp&ppn=sp&ssid=isc2921mg00000001641400708098&qH=efe2486fde5a58d5"> <img src="https://rukminim1.flixcart.com/image/612/612/krjjde80/headphone/a/t/9/pixel-buds-a-series-google-original-imag5b9dzmpnzhyd.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">Google Pixel Buds </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 5% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.flipkart.com/noise-air-buds-pro-active-cancellation-quad-mic-transparency-mode-hyper-sync-technology-bluetooth-headset/p/itmad03698892ba9?pid=ACCG6AT8GVHTCF4G&lid=LSTACCG6AT8GVHTCF4GZNCQDB&marketplace=FLIPKART&q=noise+earbuds&store=0pm%2Ffcn&srno=s_1_10&otracker=AS_Query_OrganicAutoSuggest_4_7_na_na_ps&otracker1=AS_Query_OrganicAutoSuggest_4_7_na_na_ps&fm=SEARCH&iid=cdad45ae-ccc7-48a6-9a71-81378914e201.ACCG6AT8GVHTCF4G.SEARCH&ppt=sp&ppn=sp&ssid=1tc87pjasw0000001641400965508&qH=511b2378a8e0d8b1"> <img src="https://rukminim1.flixcart.com/image/612/612/kw9krrk0/headphone/w/q/l/air-buds-pro-truly-wireless-noise-original-imag8zhtjdprvr9m.jpeg?q=70" alt="" width="200px"></a>
+                        <div class="lines">
+                        <div class="Black">    <p class="text-center my-1">Noise Air Buds Pro</p> </p></div>
+                         <div class="green"><p class="text-center my-1">Flat 62% off</p></div>   
+                          <div class="gray">  <p class="text-center my-1">Grab Now!</p> </div>
+                        
+                        </div>
+                    </div>
+                    <div id="card-item1" class="carditem-1">
+                        <img src="https://source.unsplash.com/160x160/?cricket,bat" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <img src="https://source.unsplash.com/160x160/?cricket,bat" alt="" width="200px">
+                        <div class="lines">
+                            <p class="text-center my-1">Cricket Bats</p>
+                            <p class="text-center my-1">Min 20% off</p>
+                            <p class="text-center my-1">Grab Now!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="my-2">Best Battery Phones</h2>
+                <div class="cards">
+                    <a
+                        href="https://www.flipkart.com/realme-narzo-50a-oxygen-blue-64-gb/p/itm81d679403c2b4?pid=MOBG6MY4UGGFQWYY&lid=LSTMOBG6MY4UGGFQWYYNSGSOP&marketplace=FLIPKART&q=PHONES&store=tyy%2F4io&srno=s_1_5&otracker=AS_Query_HistoryAutoSuggest_3_0&otracker1=AS_Query_HistoryAutoSuggest_3_0&fm=SEARCH&iid=89cbf5e8-6977-4a5c-b736-0e804ec18730.MOBG6MY4UGGFQWYY.SEARCH&ppt=hp&ppn=homepage&ssid=o3pp1ya42o0000001641145005233&qH=e3c0339f3d41c93e">
+                        <div class="card-item">
+                            <img src="https://rukminim1.flixcart.com/image/312/312/ktx9si80/mobile/d/n/p/narzo-50a-rmx3430-realme-original-imag75kymngzyabx.jpeg?q=70"
+                                alt="" width="200px">
+                    </a>
+                    <div class="lines">
+                        <div class="Black">
+                        <p class="text-center my-1">realme narzo 50A</p></div>
+                     <div class="green">  <p class="text-center my-1"> Flat 13% off</p></div> 
+                     <div class="gray"> <p class="text-center my-1">Grab Now!</p></div> 
+                    </div>
+
+                </div>
+                <a
+                    href="https://www.flipkart.com/realme-c21y-cross-black-64-gb/p/itm2a2e4f7554a21?pid=MOBG5ZGKQVSRBYGJ&lid=LSTMOBG5ZGKQVSRBYGJZUGRLX&marketplace=FLIPKART&q=PHONES&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=34c1c178-b45b-48a9-b96c-9b1f64231c41.MOBG5ZGKQVSRBYGJ.SEARCH&ppt=hp&ppn=homepage&ssid=ustlufiob40000001641202933679&qH=e3c0339f3d41c93e">
+                    <div class="card-item">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/ksnjp8w0/mobile/h/u/u/c21y-rmx3261-realme-original-imag65kcafgjqknz.jpeg?q=70"
+                            alt="" width="200px">
+                </a>
+                <div class="lines">
+                    <div class="Black">
+                    <p class="text-center my-1">realme C21Y</p></div>
+                 <div class="green">  <p class="text-center my-1">Flat 20% off</p></div>
+                 <div class="gray">   <p class="text-center my-1">Grab Now!</p></div>
+                </div>
+            </div>
+            <a
+                href="https://www.flipkart.com/apple-iphone-12-mini-black-64-gb/p/itm38b727191eb08?pid=MOBFWBYZXSEGBS6F&lid=LSTMOBFWBYZXSEGBS6FTONJ6W&marketplace=FLIPKART&q=iphone+12+mini&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=SEARCH&iid=f3cff083-c1bd-40da-a9b4-5f16ac609520.MOBFWBYZXSEGBS6F.SEARCH&ppt=sp&ppn=sp&ssid=ylbwfq0ocw0000001641203134803&qH=800b19e929568d27">
+                <div class="card-item">
+                    <img src="https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/n/p/d/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfwyzztfnh.jpeg?q=70"
+                        alt="" width="200px">
+                    <div class="lines">
+            </a>
+            <div class="Black"><p class="text-center my-1">Iphone 12 Mini</p></div>
+          <div class="green">  <p class="text-center my-1">flat 17% off</p></div>
+           <div class="gray"> <p class="text-center my-1">Grab Now!</p></div>
+        </div>
+        </div>
+        <a
+            href="https://www.flipkart.com/vivo-x70-pro-cosmic-black-256-gb/p/itmda08d804c661a?pid=MOBG6XXUS8XRYGB9&lid=LSTMOBG6XXUS8XRYGB9346WLR&marketplace=FLIPKART&q=vivo+x70+pro&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&fm=SEARCH&iid=cf62770f-03de-49a0-9122-6ec21d799726.MOBG6XXUS8XRYGB9.SEARCH&ppt=sp&ppn=sp&ssid=eqjk2crpu80000001641203441651&qH=9ef52111543008a1">
+            <div class="card-item">
+                <img src="https://rukminim1.flixcart.com/image/312/312/ku4ezrk0/mobile/p/c/q/x70-pro-v2114-vivo-original-imag7bq5m6bbefup.jpeg?q=70"
+                    alt="" width="200px">
+                <div class="lines">
+        </a>
+     <div class="Black">   <p class="text-center my-1"> Vivo X70 Pro</p></div>
+      <div class="green">  <p class="text-center my-1">Flat 9% off</p></div>
+        <div class="gray"><p class="text-center my-1">Grab Now!</p></div>
+        </div>
+        </div>
+        <a
+            href="https://www.flipkart.com/asus-rog-phone-3-black-128-gb/p/itmf8623d755871d?pid=MOBFUXPBV3TFMPAH&lid=LSTMOBFUXPBV3TFMPAH63D3RA&marketplace=FLIPKART&q=asus&store=search.flipkart.com&srno=s_1_3&otracker=search&otracker1=search&fm=SEARCH&iid=11c1aada-b691-4f50-a5e9-de3b4f05cd03.MOBFUXPBV3TFMPAH.SEARCH&ppt=sp&ppn=sp&ssid=6whpcr56ls0000001641203517973&qH=936aa2d51122f827">
+            <div class="card-item">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kcuug7k0/mobile/g/h/e/asus-rog-phone-3-zs661ks-6a006in-original-imaftwc6nmyuyekd.jpeg?q=70"
+                    alt="" width="200px">
+        </a>
+        <div class="lines">
+          <div class="Black"> <p class="text-center my-1">ASUS ROG Phone 3</p></div> 
+          <div class="green">  <p class="text-center my-1">Min 2% off</p></div> 
+            <div class="gray"><p class="text-center my-1">Grab Now!</p></div>
+        </div>
+        </div>
+        <a
+            href="https://www.flipkart.com/apple-iphone-13-pro-max-silver-256-gb/p/itmff24c14e68d14?pid=MOBG6VF5WA2CZWF2&lid=LSTMOBG6VF5WA2CZWF2UXIPYY&marketplace=FLIPKART&q=iphone+13+pro+max&store=tyy%2F4io&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_13_na_na_ps&fm=SEARCH&iid=a246a2da-1e31-4da6-8250-c85640bcbde0.MOBG6VF5WA2CZWF2.SEARCH&ppt=sp&ppn=sp&ssid=jeaa4bqj7k0000001641203568234&qH=5556902974bb931a">
+            <div class="card-item">
+                <img src="https://rukminim1.flixcart.com/image/312/312/kg8avm80/mobile/c/v/t/apple-iphone-12-pro-max-dummyapplefsn-original-imafwgcyyahey58k.jpeg?q=70"
+                    alt="" width="200px">
+        </a>
+        <div class="lines">
+         <div class="Black">   <p class="text-center my-1">Iphone 13 pro Max</p></div>
+        <div class="green">    <p class="text-center my-1">Min 19% off</p></div>
+           <div class="gray"> <p class="text-center my-1">Grab Now!</p></div>
+        </div>
+        </div>
+        <div id="card-item1" class="carditem-1">
+            <img src="https://source.unsplash.com/160x160/?mobile" alt="" width="200px">
+            <div class="lines">
+                <p class="text-center my-1">realme narzo 50A</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+            </div>
+        </div>
+        <div class="card-item">
+            <img src="https://source.unsplash.com/160x160/?telephone" alt="" width="200px">
+            <div class="lines">
+                <p class="text-center my-1">Cricket Bats</p>
+                <p class="text-center my-1">Min 20% off</p>
+                <p class="text-center my-1">Grab Now!</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MyCart.com </p>
+    </footer>
+</body>
+
+</html>
